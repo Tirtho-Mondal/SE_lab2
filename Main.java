@@ -2,9 +2,9 @@ public class Main {
     public static void main(String[] args) {
         SingletonShape singletonShape = SingletonShape.getSingle();
         SingletonShape singletonShape2= SingletonShape.getSingle();
-        
-        System.out.println( singletonShape.hashCode());
-        System.out.println( singletonShape2.hashCode());
+
+        System.out.println("address for singletonShape: "+ singletonShape.hashCode());
+        System.out.println("address for singletonShape2: "+  singletonShape2.hashCode());
 
         Shape shape1 = singletonShape.getShape("CIRCLE");
 
