@@ -1,6 +1,11 @@
 public class Main {
     public static void main(String[] args) {
         SingletonShape singletonShape = SingletonShape.getSingle();
+        SingletonShape singletonShape2= SingletonShape.getSingle();
+        
+        System.out.println( singletonShape.hashCode());
+        System.out.println( singletonShape2.hashCode());
+
         Shape shape1 = singletonShape.getShape("CIRCLE");
 
         if (shape1 != null) {
@@ -16,6 +21,6 @@ public class Main {
             System.out.println("null type");
         }
 
+       
     }
-
 }
